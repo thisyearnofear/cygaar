@@ -3,16 +3,18 @@ export default function () {
     <div className="frame container">
       <div className="frame__title">
         <h1 className="frame__title-main">
-          Progressively enhanced WebGL & Lens Refraction{" "}
-          <a href="https://14islands.com">by 14islands</a>
+          Find him on{" "}
+          <a href="https://warpcast.com/cygaar" target="_blank" rel="noopener noreferrer">Farcaster</a>
         </h1>
       </div>
       <a
-        aria-label="Back to the article"
+        aria-label="Abstract announcement"
         className="frame__title-back"
-        href="https://tympanus.net/codrops/?p=73607"
+        href="https://x.com/0xCygaar/status/1815779967143141549"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <span className="oh__inner">Back to the article</span>
+        <span className="oh__inner">Abstract announcement on X</span>
         <svg width="18px" height="18px" viewBox="0 0 24 24">
           <path
             vectorEffect="non-scaling-stroke"
@@ -20,8 +22,13 @@ export default function () {
           ></path>
         </svg>
       </a>
-      <a className="frame__prev" href="https://astro-shop-ten.vercel.app/">
-        Previous demo
+      <a 
+        className="frame__prev" 
+        href="https://decrypt.co/302978/ethreum-l2-abstract-launches-xp-rewards"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Decrypt article on Abstract
       </a>
     </div>
   );

@@ -57,12 +57,12 @@ export default function App() {
           <div className="headerLayout">
             <h2>
               <Headline wobble>
-                RESPONSIVE {enabled ? "WEBGL" : "HTML"}
+                CYGAAR {enabled ? " ABSTRACT" : ""}
               </Headline>
             </h2>
             <BodyCopy as="p" className="subline">
-              Progressively enhance your React website with WebGL using
-              r3f-scroll-rig, React Three Fiber and Three.js
+              CTO of Cube Labs and Lead Developer at Abstract, 
+              building the future of consumer-focused blockchain technology
             </BodyCopy>
           </div>
         </header>
@@ -74,18 +74,17 @@ export default function App() {
         </section>
         <section className="container">
           <h3>
-            <Subtitle>We use CSS to create a responsive layout.</Subtitle>
+            <Subtitle>Consumer first, built for mass adoption:</Subtitle>
             <em>
               <Subtitle>
-                A Canvas on top tracks DOM elements and enhance them with WebGL.
+                Using the ZK Stack by ZKsync + Celestia for fast, cheap secure transactions
               </Subtitle>
             </em>
           </h3>
           <p>
             <BodyCopy>
-              Try turning off WebGL using the button in the sticky header.
-              You’ll notice smooth scrolling is disabled, and all scroll-bound
-              WebGL effects disappears.
+              Abstract is a cutting-edge onchain platform designed to drive mass adoption
+              of crypto and spearhead consumer crypto adoption via "a first-of-its-kind consumer terminal, a frictionless wallet with limitless capabilities, and a chain powering dozens of consumer-friendly crypto applications".
             </BodyCopy>
           </p>
         </section>
@@ -104,9 +103,9 @@ export default function App() {
         <section className="container">
           <h4>
             <BodyCopy>
-              Thanks to Threejs we can also render 3D geometry or models. The
-              following image is replaced by a box. Try scrolling hard to make
-              it wiggle.
+              The cygaar appreciation society is proud to have launched 
+              a memecoin on abstract to honour and celebrate Cygaar & the team's contributions 
+              to ethereum and society at large.
             </BodyCopy>
           </h4>
         </section>
@@ -118,19 +117,17 @@ export default function App() {
         </section>
         <section className="container">
           <h3>
-            <Subtitle>Most websites use a mix of WebGL and HTML.</Subtitle>
+            <Subtitle>We love you Cygaar</Subtitle>
             <em>
               <Subtitle>
-                However, the Lens refraction requires all images and text to be
-                WebGL.
+                Backing abstract to build the world's largest onchain community
               </Subtitle>
             </em>
           </h3>
           <p>
-            <a href="https://github.com/14islands/r3f-scroll-rig">
+            <a href="https://github.com/cygaar" target="_blank" rel="noopener noreferrer">
               <BodyCopy>
-                You can find the r3f-scroll-rig library on Github. Please use
-                WebGL responsibly™.
+                Find Cygaar on GitHub, Substack (@cygaar), and Twitter (@0xCygaar)
               </BodyCopy>
             </a>
           </p>
@@ -147,8 +144,8 @@ export default function App() {
           bottom: 0,
           height: "5px",
         }}
-        innerStyles={{ background: "white", width: "100vw", height: "5px" }}
-        barStyles={{ background: "#6e6bcd", height: "100%" }}
+        innerStyles={{ background: "black", width: "100vw", height: "5px" }}
+        barStyles={{ background: "#00ff00", height: "100%" }}
       />
     </div>
   );

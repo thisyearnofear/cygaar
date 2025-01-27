@@ -17,12 +17,12 @@ html {
   overscroll-behavior: contain;
   font-size: max(0.75rem, 0.8101851852vw);
 
-  color: #6e6bcd;
-  background: #ecedef;
+  color: #00b167;
+  background: #ecf5ef;
 }
 
 ::selection {
-  background: rgba(110, 107, 205, 0.5);
+  background: rgba(0, 177, 103, 0.5);
 }
 
 body {
@@ -128,7 +128,7 @@ footer {
   transition: background 0.2s ease;
 }
 .EffectsToggle.is-pinned .EffectsToggle__Inner {
-  background: #dbe1f6;
+  background: #dbf6e6;
 }
 
 .EffectsToggle__Text {
@@ -137,7 +137,7 @@ footer {
 }
 .EffectsToggle button {
   appearance: none;
-  border: 1px solid #6e6bcd;
+  border: 1px solid #00b167;
   font-weight: 600;
   font-family: "Poppins";
   font-style: normal;
@@ -145,7 +145,7 @@ footer {
 
   text-align: center;
   letter-spacing: -0.02em;
-  color: #6e6bcd;
+  color: #00b167;
   border-radius: 100%;
   background: transparent;
   cursor: pointer;
@@ -266,7 +266,7 @@ a:focus-visible {
   /* Draw a very noticeable focus style for
 	 keyboard-focus on browsers that do support
 	 :focus-visible */
-  outline: 2px solid #6e6bcd;
+  outline: 2px solid #00b167;
   background: transparent;
 }
 
