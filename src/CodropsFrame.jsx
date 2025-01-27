@@ -33,3 +33,32 @@ export default function () {
     </div>
   );
 }
+
+// Create a new footer component
+export function Footer() {
+  return (
+    <div className="frame container footer-links">
+      <a 
+        href="https://dexscreener.com/abstract/0xbe01179f2291773d220eae55ee85b417f40342d0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        dexscreener
+      </a>
+      <a 
+        href="https://www.abs.xyz/trade/token?address=0x35efa4699edd7b468cbbf4fff7b6e7afc0a7ada6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        abs.xyz
+      </a>
+      <a 
+        href="https://warpcast.com/papa"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Built by papa
+      </a>
+    </div>
+  );
+}

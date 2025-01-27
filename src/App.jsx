@@ -7,7 +7,7 @@ import { Image } from "./Image";
 import { ImageCube } from "./ImageCube";
 import { WebGLBackground } from "./WebGLBackground";
 import { Lens } from "./Lens";
-import CodropsFrame from "./CodropsFrame";
+import CodropsFrame, { Footer } from "./CodropsFrame";
 import EffectsToggle from "./EffectsToggle";
 
 import "@14islands/r3f-scroll-rig/css";
@@ -60,10 +60,7 @@ export default function App() {
                 CYGAAR {enabled ? " ABSTRACT" : ""}
               </Headline>
             </h2>
-            <BodyCopy as="p" className="subline">
-              CTO of Cube Labs and Lead Developer at Abstract, 
-              building the future of consumer-focused blockchain technology
-            </BodyCopy>
+            
           </div>
         </header>
         <section className="container">
@@ -105,7 +102,7 @@ export default function App() {
             <BodyCopy>
               The cygaar appreciation society is proud to have launched 
               a memecoin on abstract to honour and celebrate Cygaar & the team's contributions 
-              to ethereum and society at large.
+              to ethereum and crypto at large.
             </BodyCopy>
           </h4>
         </section>
@@ -127,13 +124,13 @@ export default function App() {
           <p>
             <a href="https://github.com/cygaar" target="_blank" rel="noopener noreferrer">
               <BodyCopy>
-                Find Cygaar on GitHub, Substack (@cygaar), and Twitter (@0xCygaar)
+                GitHub, Substack (@cygaar), & X (@0xCygaar)
               </BodyCopy>
             </a>
           </p>
         </section>
         <footer>
-          <CodropsFrame />
+          <Footer />
         </footer>
       </article>
 
