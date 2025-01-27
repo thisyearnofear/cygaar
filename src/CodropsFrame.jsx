@@ -14,7 +14,7 @@ export default function () {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className="oh__inner">Abstract announcement on X</span>
+        <span className="oh__inner">Abstract on X</span>
         <svg width="18px" height="18px" viewBox="0 0 24 24">
           <path
             vectorEffect="non-scaling-stroke"
@@ -28,7 +28,7 @@ export default function () {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Decrypt article on Abstract
+        Decrypt article
       </a>
     </div>
   );
