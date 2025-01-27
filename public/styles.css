@@ -46,7 +46,7 @@ body,
 }
 
 article {
-  padding-top: 15vh;
+  padding-top: 7.5vh;
 }
 
 section {
@@ -60,7 +60,7 @@ header {
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  margin-bottom: max(2.5rem, 5vw);
+  margin-bottom: max(1.25rem, 2.5vw);
 }
 .headerLayout {
   position: relative;
@@ -109,7 +109,7 @@ footer {
   top: -1px; /* use to detect if pinned */
   left: max(1.2rem, 40/1440 * 100vw);
   z-index: 1000;
-  height: 20vh;
+  height: 5vh;
   font-size: 1.5rem;
   display: inline-block;
   font-family: "Playfair Display";
