@@ -1,0 +1,268 @@
+.landing-main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #87ceeb;
+}
+
+.fullscreen-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-group {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 10;
+}
+
+.buy-button {
+  background-color: rgba(26, 26, 26, 0.9);
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  padding: 16px 48px;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  white-space: nowrap;
+}
+
+.buy-button:hover {
+  background-color: rgba(26, 26, 26, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.description-text {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  max-width: 500px;
+  padding: 16px 24px;
+  background-color: rgba(165, 199, 255, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.twitter-link {
+  color: #1da1f2;
+  text-decoration: none;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.twitter-link:hover {
+  color: #0c85d0;
+}
+
+/* iPhone SE and smaller devices */
+@media screen and (max-width: 375px) {
+  .button-group {
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    top: auto;
+    gap: 8px;
+  }
+
+  .buy-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .description-text {
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    max-width: none;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}
+
+/* iPhone 12/13/14 */
+@media screen and (min-width: 376px) and (max-width: 390px) {
+  .button-group {
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    top: auto;
+    gap: 10px;
+  }
+
+  .buy-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .description-text {
+    left: 15px;
+    right: 15px;
+    top: 15px;
+    max-width: none;
+    font-size: 15px;
+  }
+}
+
+/* iPhone Pro Max and larger phones */
+@media screen and (min-width: 391px) and (max-width: 428px) {
+  .button-group {
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    top: auto;
+    gap: 12px;
+  }
+
+  .buy-button {
+    font-size: 17px;
+    padding: 14px 28px;
+  }
+
+  .description-text {
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    max-width: none;
+    font-size: 16px;
+  }
+}
+
+/* Tablets and larger phones in landscape */
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  .button-group {
+    right: 25px;
+    left: 25px;
+    bottom: 25px;
+    top: auto;
+    gap: 14px;
+  }
+
+  .buy-button {
+    font-size: 18px;
+    padding: 14px 32px;
+  }
+
+  .description-text {
+    left: 25px;
+    right: 25px;
+    top: 25px;
+    max-width: none;
+    font-size: 16px;
+  }
+}
+
+/* Handle landscape orientation */
+@media screen and (max-height: 428px) and (orientation: landscape) {
+  .button-group {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    left: auto;
+    gap: 8px;
+  }
+
+  .description-text {
+    max-width: 40%;
+  }
+}
+
+.toggle-ui {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 20;
+  background: rgba(26, 26, 26, 0.9);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.toggle-ui:hover {
+  transform: scale(1.1);
+}
+
+.toggle-ui svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.hidden-ui .button-group,
+.hidden-ui .description-text {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.button-group,
+.description-text {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Add snow animation for penguins */
+.snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.snow div {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(20px);
+  }
+}
