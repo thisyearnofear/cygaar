@@ -47,6 +47,11 @@
   white-space: nowrap;
 }
 
+.buy-button:has(emoji) {
+  font-size: 28px;
+  padding: 8px 48px;
+}
+
 .buy-button:hover {
   background-color: rgba(26, 26, 26, 1);
   transform: translateY(-2px);
@@ -264,5 +269,31 @@
   }
   100% {
     transform: translateY(100vh) translateX(20px);
+  }
+}
+
+.secret-penguin {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  opacity: 0.2;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.secret-penguin:hover {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* Add mobile responsiveness for the secret penguin */
+@media screen and (max-width: 768px) {
+  .secret-penguin {
+    bottom: 10px;
+    font-size: 16px;
   }
 }

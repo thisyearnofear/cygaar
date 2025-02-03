@@ -63,12 +63,6 @@ const LandingPage = () => {
           >
             $CYGAAR
           </a>
-          <Link
-            to="/appreciation"
-            className="buy-button"
-          >
-            APPRECIATION
-          </Link>
           <a
             href="https://abs.xyz"
             target="_blank"
@@ -78,12 +72,12 @@ const LandingPage = () => {
             ABSTRACT
           </a>
           <a
-            href="https://cygaarscircuitbuild1-0.vercel.app/"
+            href="https://flappypenguin.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="buy-button"
           >
-            CIRCUIT
+            FLAPPY
           </a>
           <a
             href="https://remenguiny.vercel.app"
@@ -115,6 +109,12 @@ const LandingPage = () => {
           . Buildoor, contributoor, onboardoor, experimentoor, let's make the legend immortal
           through the one and only abstract memecoin $cygaar. LFG!!
         </div>
+        <Link
+          to="/appreciation"
+          className="secret-penguin"
+        >
+          🐧
+        </Link>
       </div>
     </main>
   );
