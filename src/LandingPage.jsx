@@ -88,6 +88,14 @@ const LandingPage = () => {
             REMENGUINY
           </a>
           <a
+            href="https://abstractland-cygaar.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="buy-button"
+          >
+            ABSTRACTLAND
+          </a>
+          <a
             href="https://cygaarverse.xyz/"
             target="_blank"
             rel="noopener noreferrer"
